@@ -1,0 +1,17 @@
+<%- include('partials/header'); -%>
+
+<form method="POST" action="/login">
+  <h1>Login</h1>
+  <label for="email">Email</label>
+  <input type="email" name="username" required />
+  <label for="password">Password</label>
+  <input type="password" name="password" required />
+  <button type="submit">SignIn</button>
+  <a id="logoutbtn" href="/logout">logout</a>
+</form>
+<div class="col">
+  <a href="/auth/google" class="google btn">
+    <i class="fa fa-google fa-fw"></i>Signin with google
+  </a>
+</div>
+<%- include('partials/footer'); -%>
